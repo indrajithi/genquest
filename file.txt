@@ -1,0 +1,97 @@
+Bansoori is an Indian classical instrument. Akhil plays Bansoori and Guitar. 
+Puliyogare is a South Indian dish made of rice and tamarind. 
+Priya writes poems. 
+Osmosis is the movement of a solvent across a semipermeable membrane toward a higher concentration of solute. In biological systems, the solvent is typically water, but osmosis can occur in other liquids, supercritical liquids, and even gases.
+When a cell is submerged in water, the water molecules pass through the cell membrane from an area of low solute concentration to high solute concentration. For example, if the cell is submerged in saltwater, water molecules move out of the cell. If a cell is submerged in freshwater, water molecules move into the cell.
+Raja-Yoga is divided into eight steps, the first is Yama -- non - killing, truthfulness, non - stealing, continence, and non - receiving of any gifts.
+Next is Niyama -- cleanliness, contentment, austerity, study, and self - surrender to God. 
+
+My 2011 startup with Y Combinator imploded, largely because we couldn’t get enough traction. What was I going to do next? And more importantly, how was I going to avoid repeating my mistakes?
+
+A couple weeks ago my wife was out of town, so my three year old daughter and I had our weekend together. We went to see My Little Pony.
+
+I enjoyed it. Lots of great voice actors. Including Sia! She pretty much plays herself as a pony. Similar hair/wig style, and she sings in it.
+
+My daughter was traumatized.
+
+Well that’s a bit strong. Let’s just say she was in my lap the whole time worried about what was going to happen to those damn ponies. But she’d stop covering her eyes and be right back in the movie. Only to again fear for the ponies lives.
+
+There’s something interesting there. How did this movie succeed at capturing her attention so well? So much so that she’d be afraid but go right back to being engrossed?
+
+Robert McKee is a popular teacher of screenwriting. A well read book of his is “Story: Substance, Structure, Style and the Principles of Screenwriting”. It’s a book I’d recommend to anyone pursuing writing of any kind.
+
+But there’s one bit in there that will instantly improve your ability to tell stories, write, vlog — make anything, really.
+
+    A Story Event creates meaningful change in the life situation of a character that is expressed and experienced in terms of a value and ACHIEVED THROUGH CONFLICT.
+
+That’s it. That’s the nugget that all good stories revolve around. An entire film, according to McKee, is 40–60 of these story events. And what is that “value”?
+
+    Story values are the universal qualities of human experience that may shift from positive to negative, or negative to positive, from one moment to the next.
+
+Human experience. Love/hate. Anger/peace. Fear/calm. Alive/dead. And so many more.
+
+Telling people a story is all about showing how someone goes through conflict and changes the “charge” of those human conditions. They start out in love and end up in hate. They start out broke and end up wealthy through a bunch of difficult terrain.
+
+That’s what keeps us in our seat.
+
+Toy Story does this so well. Go watch Pixar’s work. Every minute there’s a value change. They’re happy, now their sad. They’re safe, now they’re not. Now they are. Now they aren’t again.
+
+My kid was glued to her seat at My Little Pony because their writers also know this basic tenet of interesting writing and storytelling.
+
+The ponies were in a wonderful stupor setting up for a party. Now terrible danger and monstrous creatures ruin their lives. Now they’re running. Now they’re safe. Now they’re at death’s door again.
+
+And when you think about the boring drivel you read or hear all too often — maybe it’s your friend talking about work, or someone going on about their day — I bet it’s because there’s simply no conflict, and even more so, there’s no value change. They went from doing well at work to still doing well at work. They went from depressed to still depressed.
+
+Of course there’s a ton more to practice and learn about the craft of telling good stories — things like the Hero’s journey or three act structures — but just get this little part right from McKee and you’ll already 10x the stuff you write and tell people about.
+
+It’s happened for me. I went from that miserable failure of a startup to realizing I needed to get better at audience building before my next venture. And so I practiced my craft of writing and storytelling on my blog. One article a week. Tell a good story. Me or someone else figuring out some problem through some conflict. My audience grew.
+
+And that audience grew to support my next project, Draft, which turned out rather successful in a crowded market of writing software. And then someone in that audience picked me to take over the business they were spinning off, Highrise. Mostly, all because I finally learned to capture people’s attention better through storytelling.
+
+
+Writing software is hard
+
+Good software is uncommon because writing it is hard. In the abstract, we all know that it is hard. We talk incessantly about how it’s hard. And yet, we also collectively seem shocked — just shocked! — when the expectable happens and the software we’re exposed to or is working on turns out poor.
+
+This is classic cognitive dissonance: Accepting that writing software is hard, but expecting that all of it should be good.
+
+It’s also an application of a just-world theory of effort and accomplishment. That despite the odds, everyone who has the right intent at heart, and puts in the work, will succeed. No they won’t. That’s just delusional.
+
+And those delusions are anything but harmless. When we expect good software to be the most likely outcome from the hardship of writing it, we’re setting ourselves up for inevitable disappointment. Even worse, if we feel we deserve good software from our imperfect efforts, we’ll project the inevitable failures on everyone and everything but ourselves.
+
+The first usual suspect arraigned to answer for this shocking-yet-expected failure is our tools. It’s the easiest out. If you’re cursing at your programming environment, it’s not going to talk back, it’s not going to refute your preposterous charges. When you share your story with your friends or colleagues, they usually do what kind people who know you do: They agree with you. They concur, even if you’re wrong.
+
+This inflates a bubble of illusionary competency with kindness and self-esteem. The tools don’t defend themselves and your compadres indulge you. So there’s nothing to puncture that bubble. (Well, unless you venture onto the internet. Strangers are always eager to tell you how incompetent you are, if you fail to justify the technology choices they already made.)
+
+Anyway, that’s a big preamble to arrive at a basic yet uncomfortable truth: Software frequently fails to be good because its creators simply aren’t competent enough software writers. There are many qualifications to that charge, many alleviating circumstances, and a very broad definition of “competent software writer”. But it is a helpful start to accepting responsibility. And accepting responsibility is the first step to improvement.
+
+Because consider the alternative: If I blame my tools or my process or my stakeholders or the full moon, I get to exonerate myself, and my ego, but I’m left with far less motivation to improve and very little insight into how. If I instead accept at least partial responsibility, there’s a clear place to start improving.
+
+I completely understand how we ended up here. With good intentions, of course. Learning something new, like programming, is daunting. Imposter syndrome is rife. We have all sorts of reasons why we want to encourage and support everyone trying to entice grumpy computers to dance.
+
+And we’ve succeeded to an astounding degree with those intentions. Getting started programming today has never been easier. From open source to superb books and tutorials to bootcamps, it is a splendor.
+
+This is in sharp contrast to the fact that programming has also never been harder to master, in both depth and breadth. There has never been more languages, more concepts, more frameworks, libraries, tools. It’s impossible to know, let alone understand it all. What an odd dichotomy.
+
+But that dichotomy is rarely the highlight of any discussion with newcomers. We are all so eager to encourage and to rightfully exalt how easy it is to get started. So of course many people are left feeling a bit mislead when their lack of competency leads to failure. And of course they’re going to look for scapegoats, like poor tools or bad documentation.
+
+Which is why its worth pondering what disservice we may be offering those who seek to learn programming by proclaiming just how super-duper easy it is now. Yes, we’ve made it easier and less intimidating to get started. That’s true progress. But getting started is, by definition, just the first step.
+
+I think it’s time to talk more frankly about step two, three, and five-hundred-thirty. To stop expecting that everyone who sets out to write software is going to end up with beautiful code and maintainable structures as the most likely outcome. They’re just not.
+
+Most code is likely to remain just that: code. Impenetrable to secondary readers, because it was barely comprehensible to its original author. Hard to reason about because reason was a distant goal behind “making it work well enough to ship”. Convoluted because the natural entropy of systems is towards a ball of mud.
+
+Some environments may well make that slightly more or less likely. Just like some baseball bats really do strike the ball further, some cars really will take the turns faster, and some typewriters really do sound more pleasing when pounded upon. The tools absolutely, positively matter. Just far less than we’d like to let newcomers believe.
+
+The true purpose of finding the right tools is how it helps the software writer progress in their journey towards mastery.
+
+Now I fully realize that I’m talking my own book here. As a tool maker, I’ve listened to several life time’s worth of woeful stories blaming programming environments for poor software (and shared quite a few of my own!). But it’s also my book because its my own story: A path to mastery paved with plenty of projection until I hit the red spark that ignited my curiosity and changed my trajectory.
+
+It’s also the sum of observation from two decades making software and watching others do the same. Seeing who continues to grow and who settles for the plateau. People who are resigned to complain about their environment without trying to better it usually fall in the second category. So do people who are eager to jump to supernatural or personal persecution as explanation for why they can’t make something work.
+
+I’d like to see fewer people get stuck at the plateau. Life is just more interesting when you keep climbing. And you’re more likely to do that if accept the odds: You will write poor software for a long time. If you accept responsibility for this, you stand the chance to write that which is at least poor in new and exciting ways, but most likely better too.
+
+There is no framework or even language that’ll allow you to sidestep this progression. There are only ones more or less likely to match your sentiments and ignite your motivation to understand it all. Find some of those and start walking.
+
+
+
