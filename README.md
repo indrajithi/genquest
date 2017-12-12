@@ -1,5 +1,8 @@
 # Automatic Question Generation
 
+This program will take a text file as an input and generate questions by analyzing each sentences. 
+
+
 ## Usage
 
 **Virtualenv recommended**
@@ -13,6 +16,14 @@
 `python3 quest.py file.txt -v`
 
 *You can also try inputing any text file.*
+
+## How to improve this program.
+
+* This program only generate questions starting with 'What'. We can add rule for generating questions with starting with 'How', 'Where', 'When' etc.
+
+* We can use a dataset of text and questions along with machine learning to ask better questions. 
+
+* Further we can create better semantic rules for creating long and complex questions.
 
 ## Reference 
 
