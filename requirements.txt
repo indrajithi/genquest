@@ -1,0 +1,4 @@
+nltk==3.2.5
+pkg-resources==0.0.0
+six==1.11.0
+textblob==0.15.0

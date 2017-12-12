@@ -61,24 +61,19 @@ def genQuestion(line):
 
 
 
+    
 
     if all(key in  bucket for key in l1):
-        question = 'What' + ' ' + line.words[bucket['VBZ']] +' '+ line.words[bucket['NNP']]+ ' '+ line.words[bucket['VBG']] + ' ' + line.words[bucket['IN']] + '?1'
+        question = 'What' + ' ' + line.words[bucket['VBZ']] +' '+ line.words[bucket['NNP']]+ ' '+ line.words[bucket['VBG']] + '?1'
 
     elif all(key in  bucket for key in l2):
         question = 'What' + ' ' + line.words[bucket['VBZ']] +' '+ line.words[bucket['NNP']] +' '+ line.words[bucket['VBG']] + '?2'
 
     elif all(key in  bucket for key in l3):
-        question = 'What' + ' ' + line.words[bucket['VBZ']] +' '+ line.words[bucket['PRP']]+ ' '+ line.words[bucket['VBG']] + ' ' + line.words[bucket['IN']] + '?3'
+        question = 'What' + ' ' + line.words[bucket['VBZ']] +' '+ line.words[bucket['PRP']]+ ' '+ line.words[bucket['VBG']] + '?3'
 
     elif all(key in  bucket for key in l4):
         question = 'What ' + line.words[bucket['PRP']] +' '+  ' does ' + line.words[bucket['VBG']]+ ' '+  line.words[bucket['VBG']] + '?4'
-
-    #elif all(key in  bucket for key in l5):
-    #    question = 'What' + ' ' + line.words[bucket['VBD']] +' '+ line.words[bucket['PRP']] +' '+ line.words[bucket['VBG']] + '?5'
-    
-    #elif all(key in  bucket for key in l6):
-    #    question = 'What' + ' ' + line.words[bucket['VBD']] +' '+ line.words[bucket['NNP']] +' '+ line.words[bucket['VBG']] + '?6'
 
     elif all(key in  bucket for key in l7):
         question = 'What' + ' ' + line.words[bucket['VBZ']] +' '+ line.words[bucket['NN']] +' '+ line.words[bucket['VBG']] + '?7'
@@ -88,9 +83,6 @@ def genQuestion(line):
 
     elif all(key in bucket for key in l9):
         question = 'What' + ' ' + line.words[bucket['VBZ']] + ' ' + line.words[bucket['NNP']] + '?9'
-
-    #elif all(key in bucket for key in ll9):
-    #    question = 'What' + ' ' + line.words[bucket['VBZ']] + ' ' + line.words[bucket['PRP']] + '?ll9'
 
     elif all(key in bucket for key in l11):
         if line.words[bucket['PRP']] in ['she','he']:
@@ -107,9 +99,12 @@ def genQuestion(line):
     #elif all(key in bucket for key in l12):
     #    question = 'Who' + line.words[bucket['NNP']] + ' ' + Word(line.words[bucket['NN']]).lemmatize("v") + '?
 
+    if 'VBZ' in bucket and line.words[bucket['VBZ']] == "’":
+        question = question.replace(" ’ ","'s ")
+
     if question != '':
         print('\n', 'Question: ' + question )
-    #print('-'*20)
+   
 
 def main():  
     """
