@@ -1,0 +1,160 @@
+
+-----------INPUT TEXT-------------
+
+Bansoori is an Indian classical instrument. Akhil plays Bansoori and Guitar. 
+Puliyogare is a South Indian dish made of rice and tamarind. 
+Priya writes poems. 
+
+Osmosis is the movement of a solvent across a semipermeable membrane toward a higher concentration of solute. In biological systems, the solvent is typically water, but osmosis can occur in other liquids, supercritical liquids, and even gases.
+When a cell is submerged in water, the water molecules pass through the cell membrane from an area of low solute concentration to high solute concentration. For example, if the cell is submerged in saltwater, water molecules move out of the cell. If a cell is submerged in freshwater, water molecules move into the cell.
+
+Raja-Yoga is divided into eight steps, the first is Yama -- non - killing, truthfulness, non - stealing, continence, and non - receiving of any gifts.
+Next is Niyama -- cleanliness, contentment, austerity, study, and self - surrender to God. 
+ 
+
+
+-----------INPUT END---------------
+
+
+ Question: What is Bansoori?
+
+ Question: What does Akhil play?
+
+ Question: What is Puliyogare?
+
+ Question: What does Priya write?
+
+ Question: What is Osmosis?
+
+ Question: What is solvent?
+
+ Question: What is cell?
+
+ Question: What is example?
+
+ Question: What is cell?
+
+ Question: What is Raja-Yoga?
+
+ Question: What is Niyama?
+
+
+
+Verbose Mode Activated
+
+
+-----------INPUT TEXT-------------
+
+Bansoori is an Indian classical instrument. Akhil plays Bansoori and Guitar. 
+Puliyogare is a South Indian dish made of rice and tamarind. 
+Priya writes poems. 
+
+Osmosis is the movement of a solvent across a semipermeable membrane toward a higher concentration of solute. In biological systems, the solvent is typically water, but osmosis can occur in other liquids, supercritical liquids, and even gases.
+When a cell is submerged in water, the water molecules pass through the cell membrane from an area of low solute concentration to high solute concentration. For example, if the cell is submerged in saltwater, water molecules move out of the cell. If a cell is submerged in freshwater, water molecules move into the cell.
+
+Raja-Yoga is divided into eight steps, the first is Yama -- non - killing, truthfulness, non - stealing, continence, and non - receiving of any gifts.
+Next is Niyama -- cleanliness, contentment, austerity, study, and self - surrender to God. 
+ 
+
+
+-----------INPUT END---------------
+
+
+ --------------------
+Bansoori is an Indian classical instrument. 
+
+TAGS: [('Bansoori', 'NNP'), ('is', 'VBZ'), ('an', 'DT'), ('Indian', 'JJ'), ('classical', 'JJ'), ('instrument', 'NN')] 
+
+{'NN': 5, 'JJ': 3, 'VBZ': 1, 'DT': 2, 'NNP': 0}
+
+ Question: What is Bansoori?
+
+ --------------------
+Akhil plays Bansoori and Guitar. 
+
+TAGS: [('Akhil', 'NNP'), ('plays', 'VBZ'), ('Bansoori', 'NNP'), ('and', 'CC'), ('Guitar', 'NNP')] 
+
+{'CC': 3, 'VBZ': 1, 'NNP': 0}
+
+ Question: What does Akhil play?
+
+ --------------------
+Puliyogare is a South Indian dish made of rice and tamarind. 
+
+TAGS: [('Puliyogare', 'NNP'), ('is', 'VBZ'), ('a', 'DT'), ('South', 'JJ'), ('Indian', 'JJ'), ('dish', 'NN'), ('made', 'VBN'), ('of', 'IN'), ('rice', 'NN'), ('and', 'CC'), ('tamarind', 'NN')] 
+
+{'JJ': 3, 'IN': 7, 'NNP': 0, 'DT': 2, 'NN': 5, 'CC': 9, 'VBZ': 1, 'VBN': 6}
+
+ Question: What is Puliyogare?
+
+ --------------------
+Priya writes poems. 
+
+TAGS: [('Priya', 'NNP'), ('writes', 'VBZ'), ('poems', 'NNS')] 
+
+{'VBZ': 1, 'NNS': 2, 'NNP': 0}
+
+ Question: What does Priya write?
+
+ --------------------
+Osmosis is the movement of a solvent across a semipermeable membrane toward a higher concentration of solute. 
+
+TAGS: [('Osmosis', 'NN'), ('is', 'VBZ'), ('the', 'DT'), ('movement', 'NN'), ('of', 'IN'), ('a', 'DT'), ('solvent', 'JJ'), ('across', 'IN'), ('a', 'DT'), ('semipermeable', 'JJ'), ('membrane', 'NN'), ('toward', 'IN'), ('a', 'DT'), ('higher', 'JJR'), ('concentration', 'NN'), ('of', 'IN'), ('solute', 'NN')] 
+
+{'JJ': 6, 'IN': 4, 'DT': 2, 'NN': 0, 'VBZ': 1, 'JJR': 13}
+
+ Question: What is Osmosis?
+
+ --------------------
+In biological systems, the solvent is typically water, but osmosis can occur in other liquids, supercritical liquids, and even gases. 
+
+TAGS: [('In', 'IN'), ('biological', 'JJ'), ('systems', 'NNS'), ('the', 'DT'), ('solvent', 'NN'), ('is', 'VBZ'), ('typically', 'RB'), ('water', 'NN'), ('but', 'CC'), ('osmosis', 'NN'), ('can', 'MD'), ('occur', 'VB'), ('in', 'IN'), ('other', 'JJ'), ('liquids', 'NNS'), ('supercritical', 'JJ'), ('liquids', 'NNS'), ('and', 'CC'), ('even', 'RB'), ('gases', 'NNS')] 
+
+{'JJ': 1, 'IN': 0, 'MD': 10, 'VB': 11, 'DT': 3, 'CC': 8, 'NN': 4, 'RB': 6, 'VBZ': 5, 'NNS': 2}
+
+ Question: What is solvent?
+
+ --------------------
+When a cell is submerged in water, the water molecules pass through the cell membrane from an area of low solute concentration to high solute concentration. 
+
+TAGS: [('When', 'WRB'), ('a', 'DT'), ('cell', 'NN'), ('is', 'VBZ'), ('submerged', 'VBN'), ('in', 'IN'), ('water', 'NN'), ('the', 'DT'), ('water', 'NN'), ('molecules', 'NNS'), ('pass', 'VBP'), ('through', 'IN'), ('the', 'DT'), ('cell', 'NN'), ('membrane', 'NN'), ('from', 'IN'), ('an', 'DT'), ('area', 'NN'), ('of', 'IN'), ('low', 'JJ'), ('solute', 'NN'), ('concentration', 'NN'), ('to', 'TO'), ('high', 'JJ'), ('solute', 'NN'), ('concentration', 'NN')] 
+
+{'JJ': 19, 'IN': 5, 'DT': 1, 'VBN': 4, 'NN': 2, 'VBZ': 3, 'NNS': 9, 'WRB': 0, 'VBP': 10, 'TO': 22}
+
+ Question: What is cell?
+
+ --------------------
+For example, if the cell is submerged in saltwater, water molecules move out of the cell. 
+
+TAGS: [('For', 'IN'), ('example', 'NN'), ('if', 'IN'), ('the', 'DT'), ('cell', 'NN'), ('is', 'VBZ'), ('submerged', 'VBN'), ('in', 'IN'), ('saltwater', 'NN'), ('water', 'NN'), ('molecules', 'NNS'), ('move', 'VBP'), ('out', 'IN'), ('of', 'IN'), ('the', 'DT'), ('cell', 'NN')] 
+
+{'IN': 0, 'DT': 3, 'VBN': 6, 'NN': 1, 'VBZ': 5, 'NNS': 10, 'VBP': 11}
+
+ Question: What is example?
+
+ --------------------
+If a cell is submerged in freshwater, water molecules move into the cell. 
+
+TAGS: [('If', 'IN'), ('a', 'DT'), ('cell', 'NN'), ('is', 'VBZ'), ('submerged', 'VBN'), ('in', 'IN'), ('freshwater', 'NN'), ('water', 'NN'), ('molecules', 'NNS'), ('move', 'VBP'), ('into', 'IN'), ('the', 'DT'), ('cell', 'NN')] 
+
+{'IN': 0, 'DT': 1, 'VBN': 4, 'NN': 2, 'VBZ': 3, 'NNS': 8, 'VBP': 9}
+
+ Question: What is cell?
+
+ --------------------
+Raja-Yoga is divided into eight steps, the first is Yama -- non - killing, truthfulness, non - stealing, continence, and non - receiving of any gifts. 
+
+TAGS: [('Raja-Yoga', 'NNP'), ('is', 'VBZ'), ('divided', 'VBN'), ('into', 'IN'), ('eight', 'CD'), ('steps', 'NNS'), ('the', 'DT'), ('first', 'JJ'), ('is', 'VBZ'), ('Yama', 'NNP'), ('non', 'JJ'), ('killing', 'NN'), ('truthfulness', 'NN'), ('non', 'SYM'), ('stealing', 'NN'), ('continence', 'NN'), ('and', 'CC'), ('non', 'SYM'), ('receiving', 'NN'), ('of', 'IN'), ('any', 'DT'), ('gifts', 'NNS')] 
+
+{'NN': 11, 'NNS': 5, 'IN': 3, 'SYM': 13, 'NNP': 0, 'VBN': 2, 'JJ': 7, 'DT': 6, 'CC': 16, 'VBZ': 1, 'CD': 4}
+
+ Question: What is Raja-Yoga?
+
+ --------------------
+Next is Niyama -- cleanliness, contentment, austerity, study, and self - surrender to God. 
+
+TAGS: [('Next', 'JJ'), ('is', 'VBZ'), ('Niyama', 'NNP'), ('cleanliness', 'NN'), ('contentment', 'NN'), ('austerity', 'NN'), ('study', 'NN'), ('and', 'CC'), ('self', 'PRP'), ('surrender', 'NN'), ('to', 'TO'), ('God', 'NNP')] 
+
+{'JJ': 0, 'PRP': 8, 'TO': 10, 'NNP': 2, 'NN': 3, 'CC': 7, 'VBZ': 1}
+
+ Question: What is Niyama?
