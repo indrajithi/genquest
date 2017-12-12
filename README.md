@@ -19,11 +19,13 @@ This program will take a text file as an input and generate questions by analyzi
 
 ## How to improve this program.
 
-* This program only generate questions starting with 'What'. We can add rule for generating questions with starting with 'How', 'Where', 'When' etc.
+* This program generates questions starting with 'What'. We can add rule for generating questions containing 'How', 'Where', 'When', 'Which' etc.
 
 * We can use a dataset of text and questions along with machine learning to ask better questions. 
 
-* Further we can create better semantic rules for creating long and complex questions.
+* Further, we can add complex semantic rules for creating long and complex questions.
+
+* We can use pre-tagged bag of words to improve part-of-speech tags.
 
 ## Reference 
 
