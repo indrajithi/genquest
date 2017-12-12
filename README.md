@@ -2,18 +2,20 @@
 
 ## Usage
 
-** Virtualenv recommended **
+**Virtualenv recommended**
+
 `pip install -r requirements.txt`
 
 `python3 quest.py file.txt`
 
-* Use `-v` option to activate verbose
+*Use `-v` option to activate verbose*
 
 `python3 quest.py file.txt -v`
 
-* You can also try inputing any text file. *
+*You can also try inputing any text file.*
 
 ## Reference 
+
 [Alphabetical list of part-of-speech tags used in the Penn Treebank Project](http://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html)
 
 [Automatic Factual Question Generation from Text](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.208.5602&rep=rep1&type=pdf)
