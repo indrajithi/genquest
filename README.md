@@ -18,7 +18,7 @@ This program takes a text file as an input and generate questions from it by ana
 
 ## How does this work?
 
-**The text file passed as argument to the program.**
+**A text file passed as argument to the program.**
 
 The text file is read using a Python package called **`textblob`**.
 Each paragraph is further broken down to sentences using function **`parse(string):`**
