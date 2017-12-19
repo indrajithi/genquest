@@ -1,6 +1,6 @@
 # Automatic Question Generation
 
-This program will take a text file as an input and generate questions by analyzing each sentences. 
+This program takes a text file as an input and generate questions from it by analyzing each sentences. 
 
 ## Usage
 
@@ -20,9 +20,9 @@ This program will take a text file as an input and generate questions by analyzi
 
 **The text file passed as argument to the program.**
 
-The text file is read using a Python package called `textblob`.
-Each paragraph is further broken down to sentences using function `parse(string):`. 
-and each sentence is passed as string to function `genQuestion(line):`
+The text file is read using a Python package called **`textblob`**.
+Each paragraph is further broken down to sentences using function **`parse(string):`**
+And each sentence is passed as string to function **`genQuestion(line):`**
 
 **These are the part-of-speech tags which is used in this demo.**
 
@@ -39,10 +39,9 @@ PRP 	Personal pronoun
 NN 	Noun, singular or mass 
 ```
 
-**Ref:** Alphabetical list of part-of-speech tags used in the Penn Treebank Project.
-http://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
+**Ref:** [Alphabetical list of part-of-speech tags used in the Penn Treebank Project](http://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html)
 
-**Then I have created a small list of combinations.**
+**This program uses a small list of combinations.**
 
 ```
     l1 = ['NNP', 'VBG', 'VBZ', 'IN']
@@ -60,12 +59,12 @@ http://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
     l13 = ['NN', 'VBZ']
 ```
 
-Then a dictionary is created called `bucket` and parsed using some English grammar using condition statements.
+A dictionary is created called **`bucket`** and parsed using some English grammar using condition statements.
 
 The sentence which gets parsed successfully generates a question sentence. 
 The generated question list is printed.
 
-**This demo only used the grammar to print questions starting with 'what'.**
+**This demo only uses some grammar to generate questions starting with 'what'.**
 
 
 ## Example
@@ -113,9 +112,9 @@ Next is Niyama -- cleanliness, contentment, austerity, study, and self - surrend
  Question: What is Niyama?
 ```
 
-# We can also activate the `verbose` by -v argument to further understand the question generation process.
+**We can also activate the `verbose` by -v argument to further understand the question generation process.**
 
-**Output with verbose option.**
+**Output:** with verbose option.
 
 ```
  Bansoori is an Indian classical instrument. 
