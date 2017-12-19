@@ -2,7 +2,6 @@
 
 This program will take a text file as an input and generate questions by analyzing each sentences. 
 
-
 ## Usage
 
 **Virtualenv recommended**
@@ -17,16 +16,17 @@ This program will take a text file as an input and generate questions by analyzi
 
 *You can also try inputing any text file.*
 
-# How does this work?
+## How does this work?
 
-The text file passed as argument to the program.
+**The text file passed as argument to the program.**
 
 The text file is read using a Python package called `textblob`.
 Each paragraph is further broken down to sentences using function `parse(string):`. 
 and each sentence is passed as string to function `genQuestion(line):`
 
-These are the part-of-speech tags which I used in this demo. 
+**These are the part-of-speech tags which is used in this demo.**
 
+```
 NNS 	Noun, plural
 JJ 	Adjective 
 NNP 	Proper noun, singular 
@@ -37,13 +37,14 @@ VBD 	Verb, past tense
 IN 		Preposition or subordinating conjunction 
 PRP 	Personal pronoun 
 NN 	Noun, singular or mass 
+```
 
-
-Ref: Alphabetical list of part-of-speech tags used in the Penn Treebank Project.
+**Ref:** Alphabetical list of part-of-speech tags used in the Penn Treebank Project.
 http://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
 
-# Then I have created a small list of combinations. 
+**Then I have created a small list of combinations.**
 
+```
     l1 = ['NNP', 'VBG', 'VBZ', 'IN']
     l2 = ['NNP', 'VBG', 'VBZ']
     l3 = ['PRP', 'VBG', 'VBZ', 'IN']
@@ -57,98 +58,22 @@ http://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
     l11 = ['PRP', 'VBZ']
     l12 = ['NNP', 'NN', 'IN']
     l13 = ['NN', 'VBZ']
+```
 
-Then created a dictionary called `bucket` and parsed using some English grammar using condition statements.
-
-The sentence which gets parsed successfully generates a question sentence. 
-The generated question list is printed.
-
-This demo only used the grammar to print questions starting with 'what'
-
-## Usage
-
-**Virtualenv recommended**
-
-`pip install -r requirements.txt`
-
-`python3 quest.py file.txt`
-
-*Use `-v` option to activate verbose*
-
-`python3 quest.py file.txt -v`
-
-*You can also try inputing any text file.*
-
-# How does this work?
-
-The text file passed as argument to the program.
-
-The text file is read using a Python package called `textblob`.
-Each paragraph is further broken down to sentences using function `parse(string):`. 
-and each sentence is passed as string to function `genQuestion(line):`
-
-These are the part-of-speech tags which I used in this demo. 
-
-NNS 	Noun, plural
-JJ 	Adjective 
-NNP 	Proper noun, singular 
-VBG 	Verb, gerund or present participle 
-VBN 	Verb, past participle 
-VBZ 	Verb, 3rd person singular present 
-VBD 	Verb, past tense 
-IN 		Preposition or subordinating conjunction 
-PRP 	Personal pronoun 
-NN 	Noun, singular or mass 
-
-
-Ref: Alphabetical list of part-of-speech tags used in the Penn Treebank Project.
-http://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html
-
-# Then I have created a small list of combinations. 
-
-    l1 = ['NNP', 'VBG', 'VBZ', 'IN']
-    l2 = ['NNP', 'VBG', 'VBZ']
-    l3 = ['PRP', 'VBG', 'VBZ', 'IN']
-    l4 = ['PRP', 'VBG', 'VBZ']
-    l5 = ['PRP', 'VBG', 'VBD']
-    l6 = ['NNP', 'VBG', 'VBD']
-    l7 = ['NN', 'VBG', 'VBZ']
-    l8 = ['NNP', 'VBZ', 'JJ']
-    l9 = ['NNP', 'VBZ', 'NN']
-    l10 = ['NNP', 'VBZ']
-    l11 = ['PRP', 'VBZ']
-    l12 = ['NNP', 'NN', 'IN']
-    l13 = ['NN', 'VBZ']
-
-Then created a dictionary called `bucket` and parsed using some English grammar using condition statements.
+Then a dictionary is created called `bucket` and parsed using some English grammar using condition statements.
 
 The sentence which gets parsed successfully generates a question sentence. 
 The generated question list is printed.
 
-This demo only used the grammar to print questions starting with 'what'
-
-## Usage
-
-**Virtualenv recommended**
-
-`pip install -r requirements.txt`
-
-`python3 quest.py file.txt`
-
-*Use `-v` option to activate verbose*
-
-`python3 quest.py file.txt -v`
-
-*You can also try inputing any text file.*
-
+**This demo only used the grammar to print questions starting with 'what'.**
 
 
 ## Example
 
 **Sentence:**
-```
 -----------INPUT TEXT-------------
 
+```
 Bansoori is an Indian classical instrument. Akhil plays Bansoori and Guitar. 
 Puliyogare is a South Indian dish made of rice and tamarind. 
 Priya writes poems. 
@@ -158,10 +83,12 @@ When a cell is submerged in water, the water molecules pass through the cell mem
 
 Raja-Yoga is divided into eight steps, the first is Yama -- non - killing, truthfulness, non - stealing, continence, and non - receiving of any gifts.
 Next is Niyama -- cleanliness, contentment, austerity, study, and self - surrender to God. 
- 
+
 -----------INPUT END---------------
 ```
+
 **Generated questions.**
+
 ```
  Question: What is Bansoori?
 
@@ -184,11 +111,11 @@ Next is Niyama -- cleanliness, contentment, austerity, study, and self - surrend
  Question: What is Raja-Yoga?
 
  Question: What is Niyama?
-
 ```
-**We can also activate the `verbose` by -v argument to further understand the question generation process.**
 
-*Output with verbose option.*
+# We can also activate the `verbose` by -v argument to further understand the question generation process.
+
+**Output with verbose option.**
 
 ```
  Bansoori is an Indian classical instrument. 
@@ -234,7 +161,6 @@ TAGS: [('Osmosis', 'NN'), ('is', 'VBZ'), ('the', 'DT'), ('movement', 'NN'), ('of
 {'JJ': 6, 'IN': 4, 'DT': 2, 'NN': 0, 'VBZ': 1, 'JJR': 13}
 
  Question: What is Osmosis?
-
 ```
 
 ## How to improve this program.
