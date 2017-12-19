@@ -70,6 +70,7 @@ The generated question list is printed.
 ## Example
 
 **Sentence:**
+
 -----------INPUT TEXT-------------
 
 ```
