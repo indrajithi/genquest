@@ -59,7 +59,7 @@ NN 	Noun, singular or mass
     l13 = ['NN', 'VBZ']
 ```
 
-Each sentence is parsed using English grammar with the use of condition statements.
+Each sentence is parsed using English grammar rules with the use of condition statements.
 A dictionary is created called **`bucket`** and the part-of-speech tags are added to it.
 
 The sentence which gets parsed successfully generates a question sentence. 
