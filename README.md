@@ -114,7 +114,7 @@ Next is Niyama -- cleanliness, contentment, austerity, study, and self - surrend
  Question: What is Niyama?
 ```
 
-**We can also activate the `verbose` by -v argument to further understand the question generation process.**
+**We can also activate the `verbose` mode by -v argument to further understand the question generation process.**
 
 **Output:** with verbose option.
 
