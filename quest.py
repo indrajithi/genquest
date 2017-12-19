@@ -61,6 +61,8 @@ def genQuestion(line):
     # NN  Noun, singular or mass 
     #.....................................................................
 
+    # Create a list of tag-combination
+
     l1 = ['NNP', 'VBG', 'VBZ', 'IN']
     l2 = ['NNP', 'VBG', 'VBZ']
     
@@ -116,10 +118,6 @@ def genQuestion(line):
 
     elif all(key in bucket for key in l13): #'NN', 'VBZ' in sentence.
         question = 'What' + ' ' + line.words[bucket['VBZ']] + ' ' + line.words[bucket['NN']] + '?'
-
-
-    #elif all(key in bucket for key in l12):
-    #    question = 'Who' + line.words[bucket['NNP']] + ' ' + Word(line.words[bucket['NN']]).lemmatize("v") + '?
 
     # When the tags are generated 's is split to ' and s. To overcome this issue.
     if 'VBZ' in bucket and line.words[bucket['VBZ']] == "’":
