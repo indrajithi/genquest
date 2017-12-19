@@ -1,6 +1,6 @@
 # Automatic Question Generation
 
-This program takes a text file as an input and generate questions from it by analyzing each sentences. 
+This program takes a text file as an input and generate questions by analyzing each sentences. 
 
 ## Usage
 
