@@ -59,10 +59,11 @@ NN 	Noun, singular or mass
     l13 = ['NN', 'VBZ']
 ```
 
-A dictionary is created called **`bucket`** and parsed using some English grammar using condition statements.
+Each sentence is parsed using English grammar with the use of condition statements.
+A dictionary is created called **`bucket`** and the part-of-speech tags are added to it.
 
 The sentence which gets parsed successfully generates a question sentence. 
-The generated question list is printed.
+The generated question list is printed as output.
 
 **This demo only uses some grammar to generate questions starting with 'what'.**
 
