@@ -1,6 +1,6 @@
 # Automatic Question Generation
 
-This program takes a text file as an input and generate questions by analyzing each sentences. 
+This program takes a text file as an input and generates questions by analyzing each sentence. 
 
 ## Usage
 
@@ -21,7 +21,7 @@ This program takes a text file as an input and generate questions by analyzing e
 **A text file passed as argument to the program.**
 
 The text file is read using a Python package called **`textblob`**.
-Each paragraph is further broken down to sentences using function **`parse(string):`**
+Each paragraph is further broken down into sentences using the function **`parse(string):`**
 And each sentence is passed as string to function **`genQuestion(line):`**
 
 **These are the part-of-speech tags which is used in this demo.**
