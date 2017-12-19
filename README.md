@@ -65,7 +65,7 @@ A dictionary is created called **`bucket`** and the part-of-speech tags are adde
 The sentence which gets parsed successfully generates a question sentence. 
 The generated question list is printed as output.
 
-**This demo only uses some grammar to generate questions starting with 'what'.**
+**This demo only uses the grammar to generate questions starting with 'what'.**
 
 
 ## Example
