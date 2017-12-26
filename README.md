@@ -8,6 +8,7 @@ This program takes a text file as an input and generates questions by analyzing 
 
 `pip install -r requirements.txt`
 
+`python -m textblob.download_corpora` 
 `python3 quest.py file.txt`
 
 *Use `-v` option to activate verbose*
