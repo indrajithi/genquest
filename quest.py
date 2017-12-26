@@ -3,9 +3,9 @@
 
 from textblob import TextBlob
 import nltk
+import nltk
 from textblob import Word
 import sys
-
 
 def parse(string):
     """
@@ -21,7 +21,16 @@ def parse(string):
     except Exception as e:
         raise e
 
+def getNodes(parent, bkt):
+    for node in parent:
+        if type(node) is nltk.Tree:
+            bkt[node.label()] = node.leaves()
+            getNodes(node,bkt)
 
+        else:
+            #bkt.setdefault('word',[])
+            #bkt['word'].append(node)
+            bkt[node[1]] = node[0]
 
 def genQuestion(line):
     """
@@ -39,13 +48,41 @@ def genQuestion(line):
         if j[1] not in bucket:
             bucket[j[1]] = i  # Add all tags to the dictionary or bucket variable
     
+
+
+
+    # named entity extraction
+    tokens = nltk.word_tokenize(str(line))
+    tagged = nltk.pos_tag(tokens)
+    entities = nltk.chunk.ne_chunk(tagged) #generate named entities
+
+    ne_bucket = {}  
+
+    getNodes(entities,ne_bucket)
+
+
+
     if verbose:               # In verbose more print the key,values of dictionary
         print('\n','-'*20)
         print(line ,'\n')        
         print("TAGS:",line.tags, '\n')  
-        print(bucket)
+        print("Bucket:",bucket,'\n')
+        print("NE_bucket:",ne_bucket,'\n')
     
-    question = ''            # Create an empty string 
+    question = ''            # Create an empty string    
+
+
+    if 'PERSON' in ne_bucket:
+        #print(ne_bucket)
+
+        if all(key in  bucket for key in ['VBZ','NN','IN','CD']):
+            question = "Who " + line.words[bucket['VBZ']] + ' ' + line.words[bucket['NN']] + ' ' \
+            + line.words[bucket['IN']] +' ' + line.words[bucket['CD']] + '?'
+
+        if question != '':
+            print('\n', 'Question: ' + question )
+        return
+
 
     # These are the english part-of-speach tags used in this demo program.
     #.....................................................................
