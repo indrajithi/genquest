@@ -187,6 +187,12 @@ TAGS: [('Osmosis', 'NN'), ('is', 'VBZ'), ('the', 'DT'), ('movement', 'NN'), ('of
 
 [K2Q: Generating Natural Language Questions from Keywords with User Refinements](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/37566.pdf)
 
+[Infusing NLU into Automatic Question Generation](http://www.aclweb.org/anthology/W16-6609)
+
+[Literature Review of Automatic Question Generation Systems](https://pdfs.semanticscholar.org/fee0/1067ea9ce9ac1d85d3fd84c3b7f363a3826b.pdf)
+
+[Neural Question Generation from Text: A Preliminary Study](https://arxiv.org/pdf/1704.01792.pdf)
+
 [Learning to Ask: Neural Question Generation for Reading Comprehension [Apr 2017] ](https://arxiv.org/pdf/1705.00106.pdf)
 
 [SQuAD: The Stanford Question Answering Dataset](https://rajpurkar.github.io/SQuAD-explorer/)
