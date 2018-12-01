@@ -5,11 +5,7 @@ from textblob import TextBlob
 import nltk
 from textblob import Word
 import sys
-from nltk.tag import StanfordNERTagger
 
-st = StanfordNERTagger('./stanford-ner/classifiers/english.all.3class.distsim.crf.ser.gz',
-                       './stanford-ner/stanford-ner.jar',
-                       encoding='utf-8')
 
 def parse(string):
     """
@@ -25,14 +21,7 @@ def parse(string):
     except Exception as e:
         raise e
 
-def getNodes(parent, bkt):
-    for node in parent:
-        if type(node) is nltk.Tree:
-            bkt[node.label()] = node.leaves()
-            getNodes(node,bkt)
 
-        else:
-            bkt[node[1]] = node[0]
 
 def genQuestion(line):
     """
@@ -50,12 +39,6 @@ def genQuestion(line):
         if j[1] not in bucket:
             bucket[j[1]] = i  # Add all tags to the dictionary or bucket variable
     
-    # named entity extraction
-    tokens = nltk.word_tokenize(str(line))
-    entities = st.tag(tokens)
-    ne_bucket = {}  
-    getNodes(entities,ne_bucket)
-
     if verbose:               # In verbose more print the key,values of dictionary
         print('\n','-'*20)
         print(line ,'\n')        
@@ -63,80 +46,6 @@ def genQuestion(line):
         print(bucket)
     
     question = ''            # Create an empty string 
-    if 'PERSON' in ne_bucket: 
-        #print(bucket)   
-
-        if all(key in  bucket for key in ['VBZ','DT','NN']):
-            question = "Who " + line.words[bucket['VBZ']] + ' ' + line.words[bucket['DT']]+ ' ' + line.words[bucket['NN']] + ' ' + '?'
-            print('\n', 'Question: ' + question )
-
-        elif all(key in  bucket for key in ['VBZ','NN']):
-            question = "Who " + line.words[bucket['VBZ']] + ' ' + line.words[bucket['NN']] + ' ' + '?'
-            print('\n', 'Question: ' + question )
-        elif all(key in  bucket for key in ['VBD','NN']):
-            question = "Who " + line.words[bucket['VBD']] + ' ' + line.words[bucket['NN']] + ' ' + '?'
-            print('\n', 'Question: ' + question )
-
-        elif all(key in  bucket for key in ['NNP','VBZ','IN','NN']):
-            question = "Who " + line.words[bucket['VBZ']] + ' ' + line.words[bucket['IN']] + line.words[bucket['NNP']] + '?'
-            print('\n', 'Question: ' + question )  
-        
-        elif all(key in  bucket for key in ['NNP','VBD','IN','NN']):
-            question = "Who " + line.words[bucket['VBD']] + ' ' + line.words[bucket['IN']] + line.words[bucket['NNP']] + '?'
-            print('\n', 'Question: ' + question )     
-
-        elif all(key in  bucket for key in ['NNP','VBZ']):
-            question = "Who " + line.words[bucket['VBZ']] + '?'
-            print('\n', 'Question: ' + question ) 
-
-        elif all(key in  bucket for key in ['NNP','VBD']):
-            question = "Who " + line.words[bucket['VBD']] + '?'
-            print('\n', 'Question: ' + question ) 
-        
-        if all(key in  bucket for key in ['VBZ','NNS']):
-            question = "Who " + line.words[bucket['VBZ']] + ' ' + line.words[bucket['NNS']] + ' ' + '?'
-            print('\n', 'Question: ' + question ) 
-
-        if all(key in  bucket for key in ['PRP','VBZ','NNP']):
-            question = "Who " + line.words[bucket['VBZ']] + ' ' + line.words[bucket['NNP']] + ' ' + '?'
-          
-        if all(key in  bucket for key in ['NNP','NNS','IN','NN']):
-            question = "Who " + line.words[bucket['NNS']] + ' ' + line.words[bucket['IN']] + ' ' + line.words[bucket['NN']] + ' ' + '?'
-        
-        if all(key in  bucket for key in ['NNP','NNS','IN','NN']):
-            question = "Who " + line.words[bucket['NNS']] + ' ' + line.words[bucket['IN']] + ' ' + line.words[bucket['NN']] + ' ' + '?'
-                          
-       
-
-
-    #print (ne_bucket)
-
-    if 'LOCATION' in ne_bucket:
-        #print(bucket)    
-
-        
-        if all(key in  bucket for key in ['PRP','NNS','IN','NNP']):
-            question = "Where does " + line.words[bucket['PRP']].lower() + ' ' + line.words[bucket['NNS']].singularize() + '?'
-
-        elif all(key in  bucket for key in ['NNP','NNS','IN','NNP']):
-            question = "Where does " + line.words[bucket['NNP']] + ' ' + line.words[bucket['NNS']].singularize() + '?'
-        
-          
-        elif all(key in  bucket for key in ['PRP','VBZ','IN','NNP']):
-            question = "Where does " + line.words[bucket['PRP']].lower() + ' ' + line.words[bucket['VBZ']].singularize() + '?'
-        
-        elif all(key in  bucket for key in ['PRP','VBD','IN','NNP']):
-            question = "Where does " + line.words[bucket['PRP']].lower() + ' ' + line.words[bucket['VBD']].singularize() + '?'
-    
-
-        elif all(key in  bucket for key in ['PRP','VBP','IN','NNP']):
-            question = "Where do " + line.words[bucket['PRP']].lower() + ' ' + line.words[bucket['VBP']] + '?'
-
-        elif all(key in  bucket for key in ['NNP','VBZ','IN']):
-            question = "Where does " + line.words[bucket['NNP']] + ' ' + line.words[bucket['VBZ']].singularize() + '?'
-        
-        elif all(key in  bucket for key in ['NNP','VBD','IN']):
-            question = "Where does " + line.words[bucket['NNP']] + ' ' + line.words[bucket['VBD']].singularize() + '?' 
 
     # These are the english part-of-speach tags used in this demo program.
     #.....................................................................
