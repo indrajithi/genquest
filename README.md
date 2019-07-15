@@ -175,6 +175,8 @@ TAGS: [('Osmosis', 'NN'), ('is', 'VBZ'), ('the', 'DT'), ('movement', 'NN'), ('of
 
 * We can use pre-tagged bag of words to improve part-of-speech tags.
 
+Note: A similar implementatin is [here](https://github.com/indrajithi/question_generation).
+
 ## Reference 
 
 [Alphabetical list of part-of-speech tags used in the Penn Treebank Project](http://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html)
