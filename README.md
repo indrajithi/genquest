@@ -1,6 +1,7 @@
 # Automatic Question Generation
 
 This program takes a text file as an input and generates questions by analyzing each sentence. 
+Note: A similar implementatin is [here](https://github.com/indrajithi/question_generation).
 
 ## Usage
 
@@ -175,7 +176,6 @@ TAGS: [('Osmosis', 'NN'), ('is', 'VBZ'), ('the', 'DT'), ('movement', 'NN'), ('of
 
 * We can use pre-tagged bag of words to improve part-of-speech tags.
 
-Note: A similar implementatin is [here](https://github.com/indrajithi/question_generation).
 
 ## Reference 
 
