@@ -1,6 +1,7 @@
 # Automatic Question Generation
 
 This program takes a text file as an input and generates questions by analyzing each sentence. 
+
 Note: A similar implementatin is [here](https://github.com/indrajithi/question_generation).
 
 ## Usage
