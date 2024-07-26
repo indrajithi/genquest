@@ -1,4 +1,4 @@
-# Automatic Question Generation
+# NLP: Automatic Question Generation
 
 This program takes a text file as an input and generates questions by analyzing each sentence. 
 
