@@ -1,10 +1,14 @@
 # NLP: Automatic Question Generation
 
+[![Try genquest on Socialistic](https://socialistic.ai/api/embed/genquest-question-gen-62755c?lang=en)](https://socialistic.ai/en/skill/genquest-question-gen-62755c?utm_source=github&utm_medium=readme&utm_campaign=20260618-intl-exam-flashcard-builders&utm_content=badge)
+
 This program takes a text file as an input and generates questions by analyzing each sentence. 
 
 Note: A similar implementatin is [here](https://github.com/indrajithi/question_generation).
 
 ## Usage
+
+**[Try it online](https://socialistic.ai/en/skill/genquest-question-gen-62755c?utm_source=github&utm_medium=readme&utm_campaign=20260618-intl-exam-flashcard-builders&utm_content=hyperlink)** — upload any text passage and get questions back, no setup needed.
 
 **Virtualenv recommended**
 
